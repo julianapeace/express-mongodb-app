@@ -86,6 +86,5 @@ MongoClient.connect(uri, function (err, db) {
   app.listen(port, function(){
     console.log('listening on port ' + port)
   });
-  // db.close();
-
+  db.close();
 })
